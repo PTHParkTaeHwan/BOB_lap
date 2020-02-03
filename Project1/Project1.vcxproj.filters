@@ -21,12 +21,24 @@
     <ClCompile Include="playerClass.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="job\knight.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="inven\InvenClass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="std.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
     <ClInclude Include="playerClass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="std.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="job\knight.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="inven\InvenClass.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,4 +1,5 @@
 #include"std.h"
+#include"job/knight.h"
 using namespace std;
 
 class shop
@@ -64,20 +65,27 @@ tagItem shop::buyItem(int num)
 
 int main()
 {
-	vector<tagItem> _vInven;
+	//vector<tagItem> _vInven;
 	shop _Sh;
 	_Sh.init();
 	_Sh.showItem();
-	_vInven.push_back(_Sh.buyItem(2));
+	//_vInven.push_back(_Sh.buyItem(2));
 
-	for (auto it = _vInven.begin(); it != _vInven.end(); ++it)
+	/*for (auto it = _vInven.begin(); it != _vInven.end(); ++it)
 	{
 		cout << "2번 물품 구매함" << endl;
 		cout << it->name << " : " << it->price << endl;
 		cout << endl;
-	}
+	}*/
 
 	_Sh.showItem();
+
+	knight _knight;
+	_knight.itemInit();
+	_knight.invenInit();
+	_knight.showInven();
+	//_knight.buyItem(_Sh.buyItem(2));
+	//_knight.showInven();
 
 	return 0;
 }
